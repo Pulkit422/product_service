@@ -1,0 +1,29 @@
+.address-section{
+    background-color:#D9D9D9 ;
+    width: 100%;
+    height: 478px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    background-color:#6D7D8B;
+    width: 100%;
+    height: 249px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    .address-section{
+        width: 100%;
+        height: 378px;
+        font-size: 0.7rem;
+    }
+    .footer{
+        width: 100%;
+        height: 140px;
+        font-size: 0.7rem;
+    }
+}

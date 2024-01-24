@@ -1,0 +1,221 @@
+.videosbox{
+    background-color: white;
+    width: auto;
+    height: 60rem;
+    /* border-radius: 20px, 20px, 20px, 20px; */
+    /* margin-left: 3rem; */
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3.75rem;;
+    grid-auto-rows:16rem;
+    /* grid-auto-columns:20rem; */
+}
+.items{
+    background-color: aliceblue;
+    border-radius:10px;
+}
+.items-video{
+    background-color:rgba(28, 45, 53, 0.629) ;
+    width: 100%;
+    height:10rem;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+
+}
+video{
+    width: 100%;
+    height: 10rem;
+    /* background-color: black; */
+    object-fit: cover;
+    /* overflow:hidden; */
+    /* margin-top: -0.06rem; */
+    /* margin-bottom: -0.3rem; */
+    border-radius: 10px 10px 0px 0px;
+    /* z-index: 0; */
+}
+.image-section {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    margin-top: -0.06rem;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 100%;
+    /* Add any additional styling for the image section */
+}
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.heart-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    /* z-index: 1; */
+}
+.image-section.hidden {
+    display: none;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    /* padding: 10px; */
+    border-radius: 50%;
+    z-index: 1;
+}
+.pause-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.videodetails{
+    background-color: #D9D9D9 ;
+    width: 100%;
+    height: 6rem;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -0.25rem;
+}
+.videodetails-1{
+    height:1.5rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.videotitle{
+    color: black;
+    margin-top: 4%;
+    margin-left: 4%; 
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.videotime{
+    color: black;
+    margin-top: 4%;
+    margin-right: 3%;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.videodetails-2{
+    height:1.5rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.videodesc{
+    color: black;
+    font-size:0.5rem;
+    margin-left: 4%;
+    margin-top: 4%;
+    font-weight: 300;
+}
+.videodetails-3{
+    height:3rem;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.price{
+    color: black;
+    font-size: 0.9rem;
+    margin-top: 4%;
+    margin-left: 4%;
+    font-weight: 700;
+}
+.addtocart{
+    background-color: white;
+    color: black;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 15px;
+    cursor: pointer;
+    font-weight:700;
+}
+@media screen and (max-width: 768px){
+    .videosbox{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 1.75rem;
+        height: 90rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+    }
+    video{
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+    }
+    .heart-icon{
+        top: 10px;
+        right: 10px;
+        font-size: 15px;
+        /* z-index: 1; */
+    }
+    .videotitle{
+        color: black;
+        margin-top: 4%;
+        margin-left: 4%; 
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .videotime{
+        color: black;
+        margin-top: 4%;
+        margin-right: 3%;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .price{
+        color: black;
+        font-size: 0.6rem;
+        margin-top: 4%;
+        margin-left: 4%;
+        font-weight: 700;
+    }
+    .videodetails{
+        background-color: #D9D9D9 ;
+        width: 100%;
+        height: 6rem;
+        /* border-radius: 0px 0px 10px 10px; */
+        margin-top: -0.25rem;
+    }
+    .videodetails-3{
+        height:2.5rem;
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .addtocart{
+        background-color: white;
+        color: black;
+        font-size: 0.5rem;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+    }
+}

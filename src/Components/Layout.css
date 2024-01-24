@@ -1,0 +1,181 @@
+/* Reset default body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header layout1 */
+.layout1 {
+    width: 100%;
+    height: 120px;
+    background-color: #aeb4ba;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo-container {
+    background-color: black;
+    width: 10%;
+    height: 80%;
+    /* margin-top: 5%; */
+    margin-left: 2%;
+    /* margin-right: 5%;
+    margin-bottom: 5%; */
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.logo-container img {
+    max-width: 100%;
+    height: auto; 
+    /* display: flex; */
+}
+
+/* Styling for the main layout container */
+.layout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/* Styling for the left container with heading and boxes */
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3%;
+    /* width: 20rem; */
+}
+
+/* Styling for the right container with the fifth box */
+.right-container {
+    width: 20rem;
+    padding-right: 3%;
+}
+
+/* Styling for the heading */
+.heading {
+    font-weight: 500;
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+    color: black;
+}
+
+/* Styling for box1 */
+.box1 {
+    width: 40rem;
+    height: 1.25rem;
+    background-color: #D9D9D9;
+    border-radius: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+/* Styling for box2 */
+.box2 {
+    width: 44rem;
+    height: 1.25rem;
+    background-color: #D9D9D9;
+    border-radius: 0.625rem;
+    margin-bottom: 0.625rem;
+}
+
+/* Styling for the fifth box */
+.fifth-box {
+    width: 100%;
+    height: 12.5rem;
+    background-color: #D9D9D9;
+    border-radius: 0.625rem;
+    margin-top: 1.25rem;
+}
+.content{
+    
+    font-weight: 500;
+    font-size: 1.875rem;
+    /* line-height: 48px; */
+    padding-left: 3%;
+    padding-top: 5rem;
+    padding-bottom: 1.25rem;
+}
+
+/* Media query for screens smaller than 500px */
+@media screen and (max-width: 768px) {
+    /* .body{
+        max-width: 500px;
+        max-height: 500px;
+    } */
+    .layout1 {
+        height: 5rem;
+    }
+
+    .layout-container {
+        /* flex-direction: column; */
+        display: flex;
+        align-items: center;
+    }
+    .logo-container {
+        background-color: black;
+        height: 100%;
+        margin-top: 15%;
+        margin-left: 2%;
+        margin-bottom: 20%;
+        /* padding: 5px; */
+    }
+    .heading {
+        /* font-weight: 500; */
+        font-size: 1.5rem;
+        /* margin-bottom: 1.25rem; */
+        color: black;
+        margin-right: 20%;
+    }
+    .content{
+        height: 5rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin-left: 4%;
+        /* line-height: 48px; */
+        padding-left: 3%;
+        padding-top: 5rem;
+        /* padding-bottom: 1.25rem; */
+        display: inline;
+    }
+    
+    .boxes-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .box1 {
+        width: 50%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .box2 {
+        width: 60%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .fifth-box{
+        height: 11rem;
+    }
+    
+    .footer{
+        height: 80px;
+    }
+    .logo-container {
+        width: 5rem;
+        height: 5rem;
+        /* padding: 5px; */
+    }
+
+    .logo-container img {
+        height: 4rem;
+        width: 4rem;
+    }
+}
